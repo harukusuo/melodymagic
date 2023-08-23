@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <section class="homepage">
+<head>
+  <title>Início</title>
+  <link rel="stylesheet" type="text/css" href="sanrio.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="index.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <h1> Melody Magic </h1>
+
+    <!-- menu sanduíche -->
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+    <menu id="itens">
+      <ul>
+        <li><a href="acessorios.html">Acessórios</a></li>
+        <li><a href="pelucias.html">Pelúcias</a></li>
+        <li><a href="tv.html">Sanrio na TV</a></li>
+      </ul>
+    </menu>
+  </header>
+
+  <!-- caixas de info do site -->
+    <div id="content">
+      <img src="https://www.sanrio.com/cdn/shop/files/HK_AND_Friends_cream_600x600.png?v=1614311113" alt="hello kitty, my melody, chococat, cinnamoroll, keroppi, bradtz-maru, pompompurin e tuxedo sam dentro de uma circunferência vermelha, amarela e azul" class="sanrio-image">
+      <h1>Sobre a Sanrio e seus Criadores</h1>
+      <p>A Sanrio é uma empresa japonesa fundada em 1960 por Shintaro Tsuji. Ela é famosa por criar personagens adoráveis e produtos relacionados, incluindo a icônica Hello Kitty. O objetivo da Sanrio é espalhar a felicidade e a amizade por meio de seus personagens e produtos.</p>
+      <p>Hello Kitty, também conhecida como Kitty White, é a personagem mais famosa da Sanrio. Ela foi criada por Yuko Shimizu e introduzida pela primeira vez no Japão em 1974. Desde então, ela se tornou um fenômeno global, com fãs de todas as idades em todo o mundo.</p>
+      <p>Além de Hello Kitty, a Sanrio criou uma variedade de outros personagens populares, como My Melody, Little Twin Stars, Cinnamoroll e muitos outros, cada um com sua própria história e estilo único.</p>
+      <p>A Sanrio continuou a expandir sua marca e influência ao longo dos anos, lançando uma ampla gama de produtos, desde artigos de papelaria até roupas, acessórios e até mesmo parques temáticos. Seus personagens são amados por pessoas de todas as idades e culturas, tornando a Sanrio uma das empresas mais reconhecíveis e queridas do mundo dos personagens e do entretenimento.</p>
+    </div>
+    <div id="content">
+      <img src="https://www.sanrio.com/cdn/shop/files/ecomm-CHGAL-Core2021_367x353px_07-CN_1000x.png?v=1614324462" alt="cinnamoroll dentro de um círculo azul" class="sanrio-image">
+      <h1>Sobre o Site</h1>
+      <p>O site Melody Magic foi criado pensado em facilitar a vida da comunidade que curte as animações, personagens, ou até mesmo apenas o estilo da empresa Sanrio; o site foi feito inteiramente pensado em seus fãs, assim fazendo um compilado com uma grande variedade de produtos e informações, assim unindo o útil ao agradável.</p>
+      <p>A primeira e a segunda página do site levam nossos usuários para uma pequena loja onde disponibilizamos a compra de produtos da empresa da famosa Hello Kitty; é possível buscar por acessórios de diversos personagens na primeira aba, e em seguida, ainda para os fãs materialistas, é póssível encontrar uma grande variedade de pelúcias dos mais queridinhos da empresa, e também é possível efetuar sua compra dentro do site.</p>
+      <p>A terceira página que pode ser explorada em nosso site preza agradar o público que assiste ou que gostaria de assistir os programas que foram criados pela grande empresa; foram selecionados sucessos dentro da comunidade para o compartilhamento de filmes e séries de qualidade, e dentro dessa aba você poderá encontras links que lhe direcionarão para esta aventura animada.</p>
+      <p>Se você se interessar pelo nosso site e quiser acompanhar com frequência, nós disponibilizaamos também uma opção de login, que deixa tudo mais organizado para os fãs da Sanrio.</p>
+    </div>
+
+  <!-- parte do login -->
+
+  <div id="login-form">
+    <h2>Login</h2>
+    <form id="login">
+      <label>Usuário:</label>
+      <input type="text" placeholder="Email" id="usuario" required><br>
+      <label>Senha:</label>
+      <input type="password" placeholder="Senha" id="senha" required><br>
+      <button onclick="logar()" id="login-button">Entrar</button>
+      <p id="login-status"></p>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://twitter.com/">X</a>
+        <a href="https://br.pinterest.com/">Pinterest</a>
+      </div>
+      <p class="footer-text">© 2023 Seu Site. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</section>
+</html>

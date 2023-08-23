@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <section class="pelucias">
+<head>
+  <title>Pelúcias</title>
+  <link rel="stylesheet" href="sanrio.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="index.js"></script>
+</head>
+<body>
+  <!-- Cabeçalho (header) -->
+  <header>
+    <h1> Melody Magic </h1>
+
+    <!-- menu sanduíche -->
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+    <menu id="itens">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="acessorios.html">Acessórios</a></li>
+        <li><a href="tv.html">Sanrio na TV</a></li>
+      </ul>
+    </menu>
+  </header>
+
+
+
+  <!-- Ícone do carrinho -->
+  <div id="icone-carrinho" onclick="toggleCarrinho()">🛒</div>
+
+  <!-- Carrinho de compras -->
+  <div id="carrinho">
+    <h2>Carrinho de Compras</h2>
+    <ul id="itens-carrinho"></ul>
+    <p id="total">Total: R$ <span>0.00</span></p>
+    <button id="botao-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+  </div>
+
+  <!-- Produtos disponíveis -->
+  <div class="produtos-disponiveis">
+    <!-- Produto 1 -->
+    <div class="produto-disponivel">
+      <img src="https://dhe5p9o7ey0xb.cloudfront.net/Custom/Content/Products/57/90/57900_pelucia-comemorativa-hello-kitty-45th-pr-14108-rf1907000192_m1_637807793284934315.jpg" alt="A imagem é uma representação de uma pelúcia comemorativa da Hello Kitty. A Hello Kitty é um personagem icônico da Sanrio, conhecido por sua aparência adorável, caracterizada por uma gatinha branca com um laço vermelho na orelha. Nesta imagem específica, a pelúcia da Hello Kitty está vestindo uma roupa especial para celebrar seu 45º aniversário." class="produto-img">
+      <h2>Hello Kitty</h2>
+      <p>Apresentamos a pelúcia Hello Kitty, personagem icônica que transcende gerações com seu design fofinho e olhos cativantes. Feita com materiais de alta qualidade, esta pelúcia é uma companhia confortável e charmosa para todas as idades. Seja como um presente memorável ou uma adição encantadora ao seu espaço, a pelúcia Hello Kitty é a personificação da alegria em uma forma irresistível. Tamanho: 30cm | Material: Pelúcia macia.</p>
+      <h3>R$ 69.00</h3>
+      <button class="botao-adicionar" onclick="adicionarAoCarrinho('Hello Kitty', 69.00, 'https://dhe5p9o7ey0xb.cloudfront.net/Custom/Content/Products/57/90/57900_pelucia-comemorativa-hello-kitty-45th-pr-14108-rf1907000192_m1_637807793284934315.jpg')">Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="produto-disponivel">
+      <img src="https://i.pinimg.com/1200x/9b/46/b6/9b46b61d17ab2877b5fa7c46ff380dd4.jpg" alt="A pelúcia da My Melody é fofa e aconchegante, com cores suaves e detalhes encantadores. My Melody é uma coelhinha com um grande laço vermelho amarrado na orelha esquerda. Sua pelagem é de um branco puro, e ela tem olhos grandes e expressivos que transmitem uma doçura irresistível." class="produto-img">
+      <h2>My Melody</h2>
+      <p>A My Melody é mais que uma personagem; é um símbolo de alegria e afeto. Esta pelúcia é uma maneira de manter essa essência sempre por perto, seja como um mimo pessoal ou um presente que aquece corações. Tamanho: 30cm | Material: Pelúcia de alta qualidade.</p>
+      <h3>R$ 64.96</h3>
+      <button class="botao-adicionar" onclick="adicionarAoCarrinho('My Melody', 64.96, 'https://i.pinimg.com/1200x/9b/46/b6/9b46b61d17ab2877b5fa7c46ff380dd4.jpg')">Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="produto-disponivel">
+      <img src="https://m.media-amazon.com/images/I/31XybIXGvFL._AC_UF894,1000_QL80_.jpg" alt="A pelúcia da Kuromi é cheia de personalidade e estilo. Kuromi é uma fada travessa com um toque punk, e sua pelúcia reflete essa atitude única. Ela tem cabelos rosa-choque espetados, com uma franja que cobre parte de seu rosto, dando-lhe um visual intrigante e um tanto misterioso.
+
+      " class="produto-img">
+      <h2>Kuromi</h2>
+      <p>Kuromi é mais que uma personagem; é um símbolo de individualidade e ousadia. Esta pelúcia é uma forma de manter essa energia sempre por perto, seja como um mimo pessoal ou um presente que expressa atitude. Descubra o estilo em cada abraço com a pelúcia Kuromi, uma amiga que inspira a confiança e torna os dias mais divertidos. Tamanho: 30cm | Material: Pelúcia de alta qualidade.</p>
+      <h3>R$ 68.50</h3>
+      <button class="botao-adicionar" onclick="adicionarAoCarrinho('Kuromi', 68.50, 'https://m.media-amazon.com/images/I/31XybIXGvFL.AC_UF894,1000_QL80.jpg')">Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Produto 4 -->
+    <div class="produto-disponivel">
+      <img src="https://static3.tcdn.com.br/img/img_prod/460977/pelucia_chococat_sanrio_dtc_53163_1_20201211174402.jpg" alt="A pelúcia do Chococat é uma representação encantadora deste personagem. Chococat é um gatinho preto com orelhas redondas e olhos grandes e expressivos. Sua pelagem é de um preto profundo, e ele tem um rosto que transmite uma sensação de calma e curiosidade." class="produto-img">
+      <h2>Chococat</h2>
+      <p>O Chococat representa a simplicidade e a alegria em sua forma mais pura. Esta pelúcia é uma maneira de manter essa essência sempre presente, seja como um mimo pessoal ou um presente que aquece corações. Descubra a doçura em cada abraço com a pelúcia Chococat, um amigo que inspira sorrisos e torna os dias mais especiais. Tamanho: 28cm | Material: Pelúcia de alta qualidade.</p>
+      <h3>R$ 58.00</h3>
+      <button class="botao-adicionar" onclick="adicionarAoCarrinho('Chococat', 58.00, 'https://static3.tcdn.com.br/img/img_prod/460977/pelucia_chococat_sanrio_dtc_53163_1_20201211174402.jpg')">Adicionar ao Carrinho</button>
+    </div>
+
+        <!-- Produto 5 -->
+        <div class="produto-disponivel">
+          <img src="https://www.sanrio.com/cdn/shop/products/661716-Zoom.1_1200x.jpg?v=1680901237" alt="A pelúcia do Cinnamoroll apresenta o personagem de forma encantadora. Cinnamoroll é um cachorro branco com orelhas grandes e fofas, as quais lembram pedaços de canela, dando origem ao seu nome 'Cinnamoroll.' Ele tem olhos expressivos e um rosto doce que transmite uma sensação de amizade e simpatia." class="produto-img">
+          <h2>Cinnamoroll</h2>
+          <p>Cinnamoroll é mais que uma personagem; é um símbolo de suavidade e amizade. Esta pelúcia é uma forma de manter essa energia sempre por perto, seja como um mimo pessoal ou um presente que expressa encanto. Descubra o céu de alegria em cada abraço com a pelúcia Cinnamoroll, um amigo que inspira sorrisos e torna os dias mais leves. Tamanho: 30cm | Material: Pelúcia de alta qualidade.</p>
+         <h3>R$ 62.90</h3>
+          <button class="botao-adicionar" onclick="adicionarAoCarrinho('Cinnamoroll', 62.90, 'https://www.sanrio.com/cdn/shop/products/661716-Zoom.1_1200x.jpg?v=1680901237')">Adicionar ao Carrinho</button>
+        </div>
+    
+        <!-- Produto 6 -->
+        <div class="produto-disponivel">
+          <img src="https://avatars.mds.yandex.net/i?id=190a821219b4af2c54bdd3662ba1b8e4df5758eb-6850570-images-thumbs&n=13" alt="A pelúcia do Pompompurin é uma representação encantadora deste personagem. Pompompurin é um cachorro dourado com uma aparência distinta. Ele tem uma cabeça grande e redonda e é frequentemente visto usando um boné amarelo com um pompom no topo, que é uma característica marcante de seu visual. Seu rosto é simpático e expressivo, com olhos grandes e um sorriso caloroso." class="produto-img">
+          <h2>Pompompurin</h2>
+          <p>O Pompompurin é mais que uma personagem; é um símbolo de doçura e alegria. Esta pelúcia é uma maneira de manter essa energia sempre presente, seja como um mimo pessoal ou um presente que aquece corações. Descubra a fofura em cada abraço com a pelúcia Pompompurin, um amigo que inspira sorrisos e torna os dias mais especiais. Tamanho: 26cm | Material: Pelúcia de alta qualidade.</p>
+          <h3>R$ 53.89</h3>
+          <button class="botao-adicionar" onclick="adicionarAoCarrinho('Pompompurin', 53.89, 'https://avatars.mds.yandex.net/i?id=190a821219b4af2c54bdd3662ba1b8e4df5758eb-6850570-images-thumbs&n=13')">Adicionar ao Carrinho</button>
+        </div>
+    
+        <!-- Produto 7 -->
+        <div class="produto-disponivel">
+          <img src="https://static3.tcdn.com.br/img/img_prod/460977/pelucia_kerokerokepoppi_sanrio_dtc_53165_1_20201211174402.jpg" alt="A pelúcia do Keroppi mostra o personagem em sua forma clássica e encantadora. Keroppi é um sapo verde com olhos grandes e expressivos que transmitem alegria e simpatia. Ele tem uma boca sorridente que adiciona uma pitada de diversão ao seu rosto. " class="produto-img">
+          <h2>Keroppi</h2>
+          <p>Keroppi é mais que uma personagem; é um símbolo de exploração e diversão. Esta pelúcia é uma forma de manter essa energia sempre por perto, seja como um mimo pessoal ou um presente que traz alegria. Descubra a aventura em cada abraço com a pelúcia Keroppi, um amigo que inspira risos e torna os dias mais emocionantes. Tamanho: 25cm | Material: Pelúcia de alta qualidade.</p>
+          <h3>R$ 55.00</h3>
+          <button class="botao-adicionar" onclick="adicionarAoCarrinho('Keroppi ', 55.00, 'https://static3.tcdn.com.br/img/img_prod/460977/pelucia_kerokerokepoppi_sanrio_dtc_53165_1_20201211174402.jpg')">Adicionar ao Carrinho</button>
+        </div>
+    
+        <!-- Produto 8 -->
+        <div class="produto-disponivel">
+          <img src="https://images-americanas.b2w.io/produtos/71573261/imagens/pelucia-sanrio-badtz-maru-dtc/71573259_1_large.jpg" alt="A pelúcia do Badtz-Maru exibe este personagem de forma cativante. Badtz-Maru é um pinguim travesso e rebelde, e sua pelúcia reflete sua personalidade única. Ele é representado como um pinguim de pelúcia de tamanho médio com cores predominantemente escuras." class="produto-img">
+          <h2>Badtz Maru</h2>
+          <p>Badtz Maru é mais que uma personagem; é um símbolo de atitude e diversão. Esta pelúcia é uma forma de manter essa energia sempre presente, seja como um mimo pessoal ou um presente que expressa descolamento. Descubra a diversão em cada abraço com a pelúcia Badtz Maru, um amigo que inspira sorrisos e torna os dias mais animados. Tamanho: 25cm | Material: Pelúcia de alta qualidade.</p>
+          <h3>R$ 50.00</h3>
+          <button class="botao-adicionar" onclick="adicionarAoCarrinho('Badtz Maru', 50.00, 'https://images-americanas.b2w.io/produtos/71573261/imagens/pelucia-sanrio-badtz-maru-dtc/71573259_1_large.jpg')">Adicionar ao Carrinho</button>
+        </div>
+
+         <!-- Produto 9 -->
+         <div class="produto-disponivel">
+            <img src="https://a-static.mlcdn.com.br/1500x1500/pelucia-hello-kitty-squishmallows-sanrio-sunny-brinquedos/magazineluiza/235483100/e62b1834491c3b1bb79d2b33029f1ed7.jpg" alt="A pelúcia do Tuxedo Sam mostra Tuxedo Sam, o adorável pinguim, em sua forma clássica e elegante. Ele é um pinguim de tamanho médio com uma aparência distintiva. Tuxedo Sam é frequentemente visto vestindo um terno elegante, que é a marca registrada de seu visual." class="produto-img">
+            <h2>Tuxedo Sam</h2>
+            <p>Tuxedo Sam é mais que uma personagem; é um símbolo de charme e classe. Esta pelúcia é uma forma de manter essa energia sempre presente, seja como um mimo pessoal ou um presente que expressa elegância. Descubra o charme em cada abraço com a pelúcia Tuxedo Sam, um amigo que inspira sorrisos e torna os dias mais refinados. Tamanho: 25cm | Material: Pelúcia de alta qualidade.</p>
+          <h3>R$ 48.90</h3>
+            <button class="botao-adicionar" onclick="adicionarAoCarrinho('Tuxedo Sam', 48.90, 'https://a-static.mlcdn.com.br/1500x1500/pelucia-hello-kitty-squishmallows-sanrio-sunny-brinquedos/magazineluiza/235483100/e62b1834491c3b1bb79d2b33029f1ed7.jpg')">Adicionar ao Carrinho</button>
+          </div>
+
+           <!-- Produto 10 -->
+        <div class="produto-disponivel">
+            <img src="https://i.pinimg.com/originals/94/35/34/9435340869c8ceb7daa3d8b7bcfa837d.jpg" alt="A pelúcia dos Little Twin Stars apresenta os irmãos gêmeos Kiki e Lala em suas formas características. Kiki é o irmão, geralmente representado com cabelos azuis e uma estrela no rosto, enquanto Lala é a irmã, representada com cabelos rosados e também com uma estrela no rosto. Ambos têm olhos grandes e expressivos, transmitindo uma sensação de inocência e alegria." class="produto-img">
+            <h2>Little Twin Stars</h2>
+            <p>Os Little Twin Stars são mais que personagens; são um símbolo de amizade mágica e encantadora. Esta pelúcia é uma maneira de manter essa energia sempre presente, seja como um mimo pessoal ou um presente que inspira sorrisos. Descubra a magia em cada abraço com a pelúcia Little Twin Stars, uma dupla que aquece o coração e torna os dias mais especiais. Tamanho: 25cm | Material: Pelúcia de alta qualidade.</p>
+            <h3>R$ 60.91</h3>
+            <button class="botao-adicionar" onclick="adicionarAoCarrinho('Little Twin Stars', 60.91, 'https://i.pinimg.com/originals/94/35/34/9435340869c8ceb7daa3d8b7bcfa837d.jpg')">Adicionar ao Carrinho</button>
+          </div>
+          
+
+  </div>
+
+  <!-- Rodapé (footer) -->
+  
+  <footer>
+    <div class="footer-links">
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://twitter.com/">X</a>
+        <a href="https://br.pinterest.com/">Pinterest</a>
+      </div>
+      <p class="footer-text">© 2023 Seu Site. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="pelucias.js"></script>
+
+</body>
+</section>
+</html>

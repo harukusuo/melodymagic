@@ -1,0 +1,572 @@
+/* HOMESANRIO.HTML */
+
+.homepage itens { /* menu sanduiche */
+    display: none;
+    text-align: center;
+  }
+  
+  #itens ul { /* menu sanduiche */
+    padding: 0;
+  }
+  
+  /* css p telas maiores */
+  @media (max-width: 768px) {
+    #itens { /* menu sanduiche */
+      display: none;
+      background-color: #FFEEF2;
+      padding: 0.75em;
+      border-radius: 0.5em;
+    }
+  
+    #itens ul { /* menu sanduiche */
+      margin: 0;
+      padding: 0;
+    }
+  
+    #itens li { /* menu sanduiche */
+      margin-bottom: 0.5em;
+      list-style: none;
+    }
+  }
+  
+  .sanrio-image { /* imagens */
+    float: right;
+    max-width: 20%;
+    height: auto;
+    margin: 0 0 1em 1em;
+  }
+  
+  body { /* corpo */
+    background-color: #ffffff;
+    color: #333;
+    font-family: Trebuchet MS, Arial, sans-serif;
+    margin: 0;
+  }
+  
+  #content { /* caixas de info */
+    background-color: #FFCCD7;
+    padding: 1.5em;
+    border-radius: 1rem;
+    margin: 1.5em;
+  }
+  
+  menu { /* menu sanduiche */
+    background-color: #FFEEF2;
+    padding: 0.75em;
+    border-radius: 0.5rem;
+  }
+  
+  menu li { /* menu sanduiche */
+    margin-bottom: 0.25em;
+  }
+  
+  #login-form { /* login */
+    background-color: #FFDDE4;
+    padding: 1.5em;
+    border-radius: 1rem;
+    margin: 1.5em;
+  }
+  
+  #login-button { /* login */
+    background-color: #FFFFFF;
+    border: none;
+    padding: 0.25em 0.5em;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  #login-status { /* login */
+    margin-top: 0.5em;
+    color: #FF3333;
+  }
+  
+  footer { /* rodapé */
+    background-color: #ff97ae;
+    padding: 1%;
+    text-align: center;
+  }
+  
+  .footer-links { /* rodapé */
+    margin-bottom: 1%;
+  }
+  
+  .footer-links a { /* rodapé */
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1%;
+  }
+  
+  .footer-links a:hover { /* rodapé */
+    text-decoration: underline;
+  }
+  
+  .footer-text { /* rodapé */
+    color: #e4e1e1;
+    font-size: small;
+  }
+  
+  header { /* cabeçalho */
+    background-color: #ff97ae;
+    text-align: center;
+  }
+  
+  header h1 { /* cabeçalho */
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  #itens li a { /* menu sanduiche */
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  
+  #itens li a:hover { /* menu sanduiche */
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  ul { /* menu sanduiche */
+    list-style: none;
+  }
+  
+  /* css p telas menores */
+  @media (max-width: 768px) {
+    header h1 { /* cabeçalho */
+      font-size: 2em;
+    }
+  
+    menu { /* menu sanduiche */
+      display: none;
+    }
+  
+    .sanrio-image { /* imagens */
+      float: none;
+      max-width: 100%;
+      margin: 1em auto;
+    }
+  }
+  
+    span#burguer { /* menu sanduiche */
+      background-color: #ff97ae;
+      display: block;
+      color: #e4e1e1;
+      text-align: center;
+      padding: 1%;
+      cursor: pointer;
+    }
+  
+    span#burguer:hover { /* menu sanduiche */
+      background-color: #e4e1e1;
+      color: #ff97ae;
+    }
+
+
+/* PELUCIAS.HTML */
+
+.pelucias menu {
+    display: none;
+  }
+  span#burguer {
+    background-color: #ff97ae;
+    display: block;
+    color: #e4e1e1;
+    text-align: center;
+    padding: 1%;
+    cursor: pointer;
+  }
+
+  span#burguer:hover {
+    background-color: #e4e1e1;
+    color: #ff97ae;
+  }
+
+  menu {
+    background-color: #FFEEF2;
+    padding: 0.75em;
+    border-radius: 0.5rem;
+  }
+  
+  menu li {
+    margin-bottom: 0.25em;
+  }
+  header {
+    background-color: #ff97ae;
+    text-align: center;
+  }header h1 {
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  #itens li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  
+  #itens li a:hover {
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  #itens li {
+    display: block;
+    margin: 10px auto;
+    padding: 0;
+    text-align: center;
+  }
+  
+   
+   /* Estilos para o carrinho */
+    #carrinho {
+      position: fixed;
+      top: 50px;
+      right: -300px; /* Inicia o carrinho escondido à direita */
+      width: 300px;
+      height: 100%;
+      background-color: #fff;
+      box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease-in-out;
+      z-index: 1;
+      padding: 20px;
+      border-radius: 10px 0 0 10px;
+    }
+
+    #carrinho.aberto {
+      right: 0;
+    }
+
+    #carrinho h2 {
+      margin-top: 0;
+    }
+
+    #carrinho ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #carrinho li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    #total {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Estilos para o ícone do carrinho */
+    #icone-carrinho {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #B78682;
+      padding: 10px;
+      cursor: pointer;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      font-size: 24px;
+      border-radius: 50%;
+    }
+
+    /* Estilização das imagens dos itens no carrinho */
+    .item-img {
+      max-width: 50px;
+      max-height: 50px;
+      margin-right: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Estilos gerais */
+    body {
+        font-family: Trebuchet MS, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf3fa;
+    }
+
+    /* Estilização dos botões de adicionar ao carrinho */
+    .botao-adicionar {
+      background-color: #B78682 ;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Botão finalizar */
+    .nome-item {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    /* Estilização do botão "Finalizar Compra" */
+    #botao-finalizar {
+      background-color: #B78682;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 18px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    /* Estilização do botão "Finalizar Compra" quando hover */
+    #botao-finalizar:hover {
+      background-color: #A66A64;
+    }
+    /* Estilização das imagens dos itens fora do carrinho */
+    .produto-img {
+      max-width: 80px;
+      max-height: 80px;
+      margin-right: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Estilização do cabeçalho (header) */
+    #header {
+      background-color: #E5B2B7;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Estilização do rodapé (footer) */
+    
+
+    /* Estilos para a seção de produtos disponíveis */
+    .produtos-disponiveis {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    /* Estilos para cada produto disponível */
+    .produto-disponivel {
+      width: calc(32.32% - 23px);
+     margin: 10px 0;
+     padding: 10px;
+     background-color: #fff;
+     box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    /* Estilos para a imagem do produto disponível */
+    .produto-disponivel .produto-img {
+      max-width: 180px;
+      max-height: 250px;
+      margin-bottom: 10px;
+    }
+
+    .produto-disponivel p{
+      text-align: justify;
+      margin-left: 9%;
+      margin-right: 9%;
+    }
+    
+   /* Estilos para os botões + e - */
+   .botao-aumentar,
+   .botao-diminuir {
+      background-color: #B78682;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-left: 5px;
+    }
+
+    /* Estilização do carrinho e dos itens no carrinho */
+    #carrinho {
+      position: fixed;
+      top: 50px;
+      right: -400px; /* Inicia o carrinho escondido à direita */
+      width: 400px; /* Aumente o valor para aumentar a largura do carrinho */
+      height: 100%; /* Mantenha ou ajuste conforme necessário */
+      background-color: #fff;
+      box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease-in-out;
+      z-index: 1;
+      padding: 20px;
+     border-radius: 10px 0 0 10px;
+
+      /* ... (estilos existentes) ... */
+    }
+
+    #itens-carrinho {
+      list-style: none;
+      padding: 0;
+    }
+
+    .item-lista {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Estilização do rodapé (footer) */
+    footer {
+      background-color: #ff97ae;
+      padding: 1%;
+      text-align: center;
+    }
+    
+    .footer-links {
+      margin-bottom: 1%;
+    }
+    
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1%;
+    }
+    
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    
+    .footer-text {
+      color: #e4e1e1;
+      font-size:small;
+}
+
+
+/* TV.HTML*/
+
+#televisao body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf3fa;
+  color: #333;
+}
+
+
+menu {
+  display: none;
+}
+span#burguer {
+  background-color: #ff97ae;
+  display: block;
+  color: #e4e1e1;
+  text-align: center;
+  padding: 1%;
+  cursor: pointer;
+}
+
+span#burguer:hover {
+  background-color: #e4e1e1;
+  color: #ff97ae;
+}
+
+menu {
+  background-color: #FFEEF2;
+  padding: 0.75em;
+  border-radius: 0.5rem;
+}
+
+menu li {
+  margin-bottom: 0.25em;
+}
+header {
+  background-color: #ff97ae;
+  text-align: center;
+}header h1 {
+  margin: 0;
+  color: #ffffff;
+}
+
+#itens li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+#itens li a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+
+#conteudo {
+  padding: 20px;
+}
+
+.programa {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.programa-imagem {
+  max-width: 200px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.programa-info {
+  flex: 1;
+}
+
+.programa-titulo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.programa-descricao {
+  font-size: 18px;
+  text-align: justify;
+  margin-right: 90px;
+}
+
+
+footer {
+  background-color: #ff97ae;
+  padding: 1%;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 1%;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1%;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  color: #e4e1e1;
+  font-size: small;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  }
