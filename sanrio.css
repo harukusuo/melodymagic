@@ -449,6 +449,58 @@
       font-size:small;
 }
 
+   /* muda as resoluções p telas menores */
+   @media (max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      justify-content: flex-start; /* alinhamento vertical no topo */
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-left: 0;
+      margin-bottom: 1em;
+    }
+    .produto-disponivel .produto-img {
+      max-width: 100px;
+      max-height: 100px;
+      margin-bottom: 10px;
+    }
+
+    .produto-disponivel {
+      width: 100%; /* Ocupa toda a largura da tela */
+      margin: 10px 0;
+      padding: 10px;
+    }
+    #carrinho {
+      right: -355px;
+      width: 90%; /* Ocupa toda a largura da tela */
+      position: fixed;
+    }
+    
+    /* Ajuste o tamanho dos itens no carrinho */
+    .item-img {
+      max-width: 30px;
+      max-height: 30px;
+    }
+    
+    /* Ajuste o botão "Finalizar Compra" */
+    #botao-finalizar {
+      font-size: 16px;
+    }
+    header {
+      padding: 10px;
+    }
+    
+    header h1 {
+      font-size: 24px;
+    }
+  }
+
 
 /* TV.HTML*/
 
@@ -570,3 +622,268 @@ img {
   max-width: 100%;
   height: auto;
   }
+
+  /* Estilos específicos para telas menores (dispositivos móveis) */
+@media (max-width: 768px) {
+  /* Esconde o menu por padrão e mostra o ícone do hambúrguer */
+  menu {
+    display: none;
+  }
+  
+  span#burguer {
+    display: block;
+  }
+
+  /* Estiliza o menu de hambúrguer */
+  span#burguer {
+    background-color: #ff97ae;
+    color: #e4e1e1;
+    text-align: center;
+    padding: 1%;
+    cursor: pointer;
+  }
+
+  span#burguer:hover {
+    background-color: #e4e1e1;
+    color: #ff97ae;
+  }
+
+  /* Ajuste do cabeçalho para ocupar menos espaço */
+  header {
+    background-color: #ff97ae;
+    text-align: center;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  /* Estilização dos links no menu para telas menores */
+  #itens li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+
+  #itens li a:hover {
+    color: #333;
+    text-decoration: underline;
+  }
+
+  /* Estilização do conteúdo principal para telas menores */
+  #conteudo {
+    padding: 10px;
+  }
+
+  /* Ajuste dos elementos de programa para telas menores */
+  .programa {
+    flex-direction: column; /* Coluna em vez de linha */
+    align-items: flex-start; /* Alinhamento à esquerda */
+    margin-bottom: 10px;
+  }
+
+  .programa-imagem {
+    max-width: 100%; /* Ocupa toda a largura */
+    margin-right: 0; /* Remove a margem à direita */
+    margin-bottom: 10px; /* Espaçamento inferior */
+  }
+
+  .programa-info {
+    width: 100%; /* Ocupa toda a largura */
+    text-align: left; /* Alinhamento à esquerda */
+  }
+
+  .programa-titulo {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .programa-descricao {
+    font-size: 16px;
+    text-align: justify;
+    margin-right: 0; /* Remove a margem à direita */
+  }
+  
+  /* Ajuste do rodapé para telas menores */
+  footer {
+    padding: 10px;
+  }
+}
+
+
+  /* TENDENCIAS.HTML */
+
+  .tendencias .sanrio-image {
+    float: right;
+    max-width: 20%;
+    height: auto;
+    margin: 0 0 1em 1em;
+  }
+  
+  .sanrio-image2 {
+    float: center;
+    max-width: 20%;
+    height: auto
+  }
+
+  #itens { /* menu sanduiche */
+    display: none;
+    text-align: center;
+  }
+  
+  #itens ul { /* menu sanduiche */
+    padding: 0;
+  }
+  
+  /* css p telas maiores */
+  @media (max-width: 768px) {
+    #itens { /* menu sanduiche */
+      display: none;
+      background-color: #FFEEF2;
+      padding: 0.75em;
+      border-radius: 0.5em;
+    }
+  
+    #itens ul { /* menu sanduiche */
+      margin: 0;
+      padding: 0;
+    }
+  
+    #itens li { /* menu sanduiche */
+      margin-bottom: 0.5em;
+      list-style: none;
+    }
+  }
+  
+  .sanrio-image { /* imagens */
+    float: right;
+    max-width: 20%;
+    height: auto;
+    margin: 0 0 1em 1em;
+  }
+  
+  body { /* corpo */
+    background-color: #ffffff;
+    color: #333;
+    font-family: Trebuchet MS, Arial, sans-serif;
+    margin: 0;
+  }
+  
+  #content { /* caixas de info */
+    background-color: #FFCCD7;
+    padding: 1.5em;
+    border-radius: 1rem;
+    margin: 1.5em;
+  }
+  
+  menu { /* menu sanduiche */
+    background-color: #FFEEF2;
+    padding: 0.75em;
+    border-radius: 0.5rem;
+  }
+  
+  menu li { /* menu sanduiche */
+    margin-bottom: 0.25em;
+  }
+  
+  #login-form { /* login */
+    background-color: #FFDDE4;
+    padding: 1.5em;
+    border-radius: 1rem;
+    margin: 1.5em;
+  }
+  
+  #login-button { /* login */
+    background-color: #FFFFFF;
+    border: none;
+    padding: 0.25em 0.5em;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  #login-status { /* login */
+    margin-top: 0.5em;
+    color: #FF3333;
+  }
+  
+  footer { /* rodapé */
+    background-color: #ff97ae;
+    padding: 1%;
+    text-align: center;
+  }
+  
+  .footer-links { /* rodapé */
+    margin-bottom: 1%;
+  }
+  
+  .footer-links a { /* rodapé */
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1%;
+  }
+  
+  .footer-links a:hover { /* rodapé */
+    text-decoration: underline;
+  }
+  
+  .footer-text { /* rodapé */
+    color: #e4e1e1;
+    font-size: small;
+  }
+  
+  header { /* cabeçalho */
+    background-color: #ff97ae;
+    text-align: center;
+  }
+  
+  header h1 { /* cabeçalho */
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  #itens li a { /* menu sanduiche */
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  
+  #itens li a:hover { /* menu sanduiche */
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  ul { /* menu sanduiche */
+    list-style: none;
+  }
+  
+  /* css p telas menores */
+  @media (max-width: 768px) {
+    header h1 { /* cabeçalho */
+      font-size: 2em;
+    }
+  
+    menu { /* menu sanduiche */
+      display: none;
+    }
+  
+    .sanrio-image { /* imagens */
+      float: none;
+      max-width: 100%;
+      margin: 1em auto;
+    }
+  }
+  
+    span#burguer { /* menu sanduiche */
+      background-color: #ff97ae;
+      display: block;
+      color: #e4e1e1;
+      text-align: center;
+      padding: 1%;
+      cursor: pointer;
+    }
+  
+    span#burguer:hover { /* menu sanduiche */
+      background-color: #e4e1e1;
+      color: #ff97ae;
+    }
