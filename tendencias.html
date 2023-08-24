@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <section class="tendencias">
+    <head>
+        <title>Site Sanrio</title>
+        <link rel="stylesheet" type="text/css" href="sanrio.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="pelucias.js"></script>
+        <script src="index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1> Melody Magic </h1>
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+            <menu id="itens">
+              <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pelucias.html">Pelúcias</a></li>
+                <li><a href="tv.html">Sanrio na TV</a></li>
+              </ul>
+            </menu>
+          </header>
+
+          <!-- Ícone do carrinho -->
+  <div id="icone-carrinho" onclick="toggleCarrinho()">🛒</div>
+
+  <!-- Carrinho de compras -->
+  <div id="carrinho">
+    <h2>Carrinho de Compras</h2>
+    <ul id="itens-carrinho"></ul>
+    <p id="total">Total: R$ <span>0.00</span></p>
+    <button id="botao-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+  </div>
+
+
+        <section class="tendencias">
+            <div id="content">
+                <img src="https://criacao.carrd.co/assets/images/image01.png?v=f9f8739e" alt="sanrio logo com rosto de hello kitty" class="sanrio-image">
+                <h1>Tendências Da Loja Sanrio</h1>
+                <p>Tendências em produtos da loja Sanrio</p>
+                <p>Roupas, acessórios, brinquedos, adesivos e figuras</p>
+                <br>
+            </div>
+
+        </section>
+      <section class="tendencias">
+    <div id="content">
+        <div class="produto">
+            <img src="https://criacao.carrd.co/assets/images/image04.png?v=f9f8739e" alt="Funkopop da hello kitty sanrio" class="sanrio-image2">
+            <h2>Funkopop da hello kitty sanrio</h2>
+            <h3>R$70,00</h3>
+            <button class="botao-adicionar" onclick="adicionarAoCarrinho('Funkopop da hello kitty sanrio', 70.00, 'https://criacao.carrd.co/assets/images/image04.png?v=f9f8739e')">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="produto">
+            <img src="https://criacao.carrd.co/assets/images/image06.png?v=f9f8739e" alt="Canetas coloridas sanrio" class="sanrio-image2">
+            <h2>Canetas coloridas sanrio</h2>
+            <h3>R$50,50</h3>
+            <button class="botao-adicionar" onclick="adicionarAoCarrinho('Canetas coloridas sanrio', 50.50, 'https://criacao.carrd.co/assets/images/image06.png?v=f9f8739e')">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="produto">
+            <img src="https://criacao.carrd.co/assets/images/image05.png?v=f9f8739e" alt="Mochila da hello kitty sanrio" class="sanrio-image2">
+            <h2>Mochila da hello kitty sanrio</h2>
+            <h3>R$100,99</h3>
+            <button class="botao-adicionar" onclick="adicionarAoCarrinho('Mochila da hello kitty sanrio', 100.99, 'https://criacao.carrd.co/assets/images/image05.png?v=f9f8739e')">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="produto">
+            <img src="https://criacao.carrd.co/assets/images/image02.png?v=f9f8739e" alt="Camiseta da hello kitty sanrio" class="sanrio-image2">
+            <h2>Camiseta da hello kitty sanrio</h2>
+            <h3>R$80,91</h3>
+            <button class="botao-adicionar" onclick="adicionarAoCarrinho('Camiseta da hello kitty sanrio', 80.91, 'https://criacao.carrd.co/assets/images/image02.png?v=f9f8739e')">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="produto">
+            <img src="https://criacao.carrd.co/assets/images/image03.png?v=f9f8739e" alt="Canecas sanrio" class="sanrio-image2">
+            <h2>Canecas sanrio</h2>
+            <h3>R$94,80</h3>
+            <button class="botao-adicionar" onclick="adicionarAoCarrinho('Canecas sanrio', 94.80, 'https://criacao.carrd.co/assets/images/image03.png?v=f9f8739e')">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</section>
+        <footer>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://twitter.com/">X</a>
+                <a href="https://br.pinterest.com/">Pinterest</a>
+            </div>
+            <p class="footer-text">© 2023 Seu Site. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</section>
+</html>
