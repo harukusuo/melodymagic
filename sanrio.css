@@ -714,176 +714,293 @@ img {
 
   /* TENDENCIAS.HTML */
 
-  .tendencias .sanrio-image {
-    float: right;
-    max-width: 20%;
-    height: auto;
-    margin: 0 0 1em 1em;
+  .tendencias /* Estilo para o contêiner dos produtos */
+  #content {
+      display: flex;
+      flex-wrap: wrap; /* Permite que os produtos quebrem para a próxima linha em telas pequenas */
+      justify-content: space-between; /* Espaçamento entre os produtos */
   }
   
+  /* Estilo para cada produto */
+  .produto {
+      width: 48%; /* Para que cada produto ocupe metade da largura do contêiner */
+      margin-bottom: 20px; /* Espaçamento inferior entre os produtos */
+      text-align: center;
+  }
+  
+  /* Estilo para as imagens dos produtos */
   .sanrio-image2 {
-    float: center;
-    max-width: 20%;
-    height: auto
-  }
-
-  #itens { /* menu sanduiche */
-    display: none;
-    text-align: center;
+      max-width: 100%; /* Para que as imagens não ultrapassem a largura do contêiner */
   }
   
-  #itens ul { /* menu sanduiche */
-    padding: 0;
-  }
-  
-  /* css p telas maiores */
-  @media (max-width: 768px) {
     #itens { /* menu sanduiche */
       display: none;
-      background-color: #FFEEF2;
-      padding: 0.75em;
-      border-radius: 0.5em;
+      text-align: center;
     }
-  
+    
     #itens ul { /* menu sanduiche */
-      margin: 0;
       padding: 0;
     }
-  
-    #itens li { /* menu sanduiche */
-      margin-bottom: 0.5em;
-      list-style: none;
+    
+    /* css p telas maiores */
+    @media (max-width: 768px) {
+      #itens { /* menu sanduiche */
+        display: none;
+        background-color: #FFEEF2;
+        padding: 0.75em;
+        border-radius: 0.5em;
+      }
+    
+      #itens ul { /* menu sanduiche */
+        margin: 0;
+        padding: 0;
+      }
+    
+      #itens li { /* menu sanduiche */
+        margin-bottom: 0.5em;
+        list-style: none;
+      }
     }
-  }
-  
-  .sanrio-image { /* imagens */
-    float: right;
-    max-width: 20%;
-    height: auto;
-    margin: 0 0 1em 1em;
-  }
-  
-  body { /* corpo */
-    background-color: #ffffff;
-    color: #333;
-    font-family: Trebuchet MS, Arial, sans-serif;
-    margin: 0;
-  }
-  
-  #content { /* caixas de info */
-    background-color: #FFCCD7;
-    padding: 1.5em;
-    border-radius: 1rem;
-    margin: 1.5em;
-  }
-  
-  menu { /* menu sanduiche */
-    background-color: #FFEEF2;
-    padding: 0.75em;
-    border-radius: 0.5rem;
-  }
-  
-  menu li { /* menu sanduiche */
-    margin-bottom: 0.25em;
-  }
-  
-  #login-form { /* login */
-    background-color: #FFDDE4;
-    padding: 1.5em;
-    border-radius: 1rem;
-    margin: 1.5em;
-  }
-  
-  #login-button { /* login */
-    background-color: #FFFFFF;
-    border: none;
-    padding: 0.25em 0.5em;
-    border-radius: 0.5rem;
-    cursor: pointer;
-  }
-  
-  #login-status { /* login */
-    margin-top: 0.5em;
-    color: #FF3333;
-  }
-  
-  footer { /* rodapé */
-    background-color: #ff97ae;
-    padding: 1%;
-    text-align: center;
-  }
-  
-  .footer-links { /* rodapé */
-    margin-bottom: 1%;
-  }
-  
-  .footer-links a { /* rodapé */
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1%;
-  }
-  
-  .footer-links a:hover { /* rodapé */
-    text-decoration: underline;
-  }
-  
-  .footer-text { /* rodapé */
-    color: #e4e1e1;
-    font-size: small;
-  }
-  
-  header { /* cabeçalho */
-    background-color: #ff97ae;
-    text-align: center;
-  }
-  
-  header h1 { /* cabeçalho */
-    margin: 0;
-    color: #ffffff;
-  }
-  
-  #itens li a { /* menu sanduiche */
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s, text-decoration 0.3s;
-  }
-  
-  #itens li a:hover { /* menu sanduiche */
-    color: #333;
-    text-decoration: underline;
-  }
-  
-  ul { /* menu sanduiche */
-    list-style: none;
-  }
-  
-  /* css p telas menores */
-  @media (max-width: 768px) {
-    header h1 { /* cabeçalho */
-      font-size: 2em;
-    }
-  
-    menu { /* menu sanduiche */
-      display: none;
-    }
-  
+    
     .sanrio-image { /* imagens */
-      float: none;
-      max-width: 100%;
-      margin: 1em auto;
+      float: right;
+      max-width: 20%;
+      height: auto;
+      margin: 0 0 1em 1em;
     }
-  }
-  
-    span#burguer { /* menu sanduiche */
-      background-color: #ff97ae;
-      display: block;
-      color: #e4e1e1;
-      text-align: center;
-      padding: 1%;
+    
+    body { /* corpo */
+      background-color: #ffffff;
+      color: #333;
+      font-family: Trebuchet MS, Arial, sans-serif;
+      margin: 0;
+    }
+    
+    #content { /* caixas de info */
+      background-color: #FFCCD7;
+      padding: 1.5em;
+      border-radius: 1rem;
+      margin: 1.5em;
+    }
+    
+    menu { /* menu sanduiche */
+      background-color: #FFEEF2;
+      padding: 0.75em;
+      border-radius: 0.5rem;
+    }
+    
+    menu li { /* menu sanduiche */
+      margin-bottom: 0.25em;
+    }
+    
+    #login-form { /* login */
+      background-color: #FFDDE4;
+      padding: 1.5em;
+      border-radius: 1rem;
+      margin: 1.5em;
+    }
+    
+    #login-button { /* login */
+      background-color: #FFFFFF;
+      border: none;
+      padding: 0.25em 0.5em;
+      border-radius: 0.5rem;
       cursor: pointer;
     }
-  
-    span#burguer:hover { /* menu sanduiche */
-      background-color: #e4e1e1;
-      color: #ff97ae;
+    
+    #login-status { /* login */
+      margin-top: 0.5em;
+      color: #FF3333;
     }
+    
+    footer { /* rodapé */
+      background-color: #ff97ae;
+      padding: 1%;
+      text-align: center;
+    }
+    
+    .footer-links { /* rodapé */
+      margin-bottom: 1%;
+    }
+    
+    .footer-links a { /* rodapé */
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1%;
+    }
+    
+    .footer-links a:hover { /* rodapé */
+      text-decoration: underline;
+    }
+    
+    .footer-text { /* rodapé */
+      color: #e4e1e1;
+      font-size: small;
+    }
+    
+    header { /* cabeçalho */
+      background-color: #ff97ae;
+      text-align: center;
+    }
+    
+    header h1 { /* cabeçalho */
+      margin: 0;
+      color: #ffffff;
+    }
+    
+    #itens li a { /* menu sanduiche */
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s, text-decoration 0.3s;
+    }
+    
+    #itens li a:hover { /* menu sanduiche */
+      color: #333;
+      text-decoration: underline;
+    }
+    
+    ul { /* menu sanduiche */
+      list-style: none;
+    }
+    
+    /* css p telas menores */
+    @media (max-width: 768px) {
+      header h1 { /* cabeçalho */
+        font-size: 2em;
+      }
+    
+      menu { /* menu sanduiche */
+        display: none;
+      }
+    
+      .sanrio-image { /* imagens */
+        float: none;
+        max-width: 100%;
+        margin: 1em auto;
+      }
+    }
+    
+      span#burguer { /* menu sanduiche */
+        background-color: #ff97ae;
+        display: block;
+        color: #e4e1e1;
+        text-align: center;
+        padding: 1%;
+        cursor: pointer;
+      }
+    
+      span#burguer:hover { /* menu sanduiche */
+        background-color: #e4e1e1;
+        color: #ff97ae;
+      }
+  
+  
+        #carrinho.aberto {
+          right: 0;
+        }
+    
+        #carrinho h2 {
+          margin-top: 0;
+        }
+    
+        #carrinho ul {
+          list-style: none;
+          padding: 0;
+        }
+    
+        #carrinho li {
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+        }
+    
+        #total {
+          font-weight: bold;
+          font-size: 18px;
+        }
+    
+        /* Estilos para o ícone do carrinho */
+        #icone-carrinho {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background-color: #B78682;
+          padding: 10px;
+          cursor: pointer;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          z-index: 2;
+          font-size: 24px;
+          border-radius: 50%;
+        }
+    
+        /* Estilização das imagens dos itens no carrinho */
+        .item-img {
+          max-width: 50px;
+          max-height: 50px;
+          margin-right: 10px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+  
+       /* Estilo para os botões de adicionar ao carrinho */
+  .botao-adicionar {
+      background-color: #B78682;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px; /* Espaçamento superior entre a imagem e o botão */
+  }
+        /* Botão finalizar */
+        .nome-item {
+          font-size: 16px;
+          font-weight: bold;
+        }
+    
+        /* Estilização do botão "Finalizar Compra" */
+        #botao-finalizar {
+          background-color: #B78682;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          border-radius: 5px;
+          margin-top: 20px;
+          font-size: 18px;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          transition: background-color 0.3s ease;
+        }
+    
+        /* Estilização do botão "Finalizar Compra" quando hover */
+        #botao-finalizar:hover {
+          background-color: #A66A64;
+        }
+  
+        /* Estilos para os botões + e - */
+     .botao-aumentar,
+     .botao-diminuir {
+        background-color: #B78682;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: 5px;
+      }
+  
+      /* Estilização do carrinho e dos itens no carrinho */
+      #carrinho {
+        position: fixed;
+        top: 50px;
+        right: -400px; /* Inicia o carrinho escondido à direita */
+        width: 400px; /* Aumente o valor para aumentar a largura do carrinho */
+        height: 100%; /* Mantenha ou ajuste conforme necessário */
+        background-color: #fff;
+        box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease-in-out;
+        z-index: 1;
+        padding: 20px;
+       border-radius: 10px 0 0 10px;
+      }
